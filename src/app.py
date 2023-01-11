@@ -4,7 +4,7 @@ import asyncio_mqtt as aiomqtt
 import paho.mqtt as mqtt
 import os
 
-app = FastAPI()
+app = FastAPI(title='LED Pager Notify', version='0.0.1')
 
 class Notification(BaseModel):
     id: str
